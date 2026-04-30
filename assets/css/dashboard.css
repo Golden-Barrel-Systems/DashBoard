@@ -1,0 +1,182 @@
+/* pag td */
+body {
+  background: rgba(0, 111, 83, 0.2);
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 15px;
+  color: rgb(6, 33, 26);
+  text-align: center;
+}
+
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\   SideBar   \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+/* sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 240px;
+  height: 100%;
+  background: rgb(6, 33, 26);
+  color: white;
+  padding: 25px 18px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* logo */
+.logo {
+  text-align: center;
+}
+
+.logo img {
+  width: 110px;
+  height: 110px;
+}
+
+.logo h2 {
+  font-size: 25px;
+  margin-top: 8px;
+  text-transform: uppercase;
+}
+
+/* menu */
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* botão sair */
+.btn {
+  border: none;
+  padding: 14px;
+  border-radius: 12px;
+  background: #c79a3b;
+  color: rgb(6, 33, 26);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* conteúdo */
+.dash {
+  margin-left: 240px;
+  padding: 20px;
+}
+
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\   Selects e Kpi de resumo \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+.selects {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+.SelecaoSelects {
+  /*Seleção dos selects */
+  background: white;
+  border-radius: 18px;
+  padding: 18px;
+  box-shadow: 0 10px 24px rgba(6, 33, 26, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  border: 1px solid rgba(0, 111, 83, 0.10);
+}
+
+.SelecaoSelects h3 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: rgb(6, 33, 26);
+}
+
+.SelecaoSelects p {
+  margin: 0;
+  font-size: 12px;
+  color: #5a6d67;
+}
+
+.selects select {
+  /* Div dos selects */
+  width: 100%;
+  height: 50px;
+  border-radius: 14px;
+  border: 2px solid rgba(0, 111, 83, 0.18);
+  background: #f7fbf9;
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(6, 33, 26);
+  padding: 0 14px;
+  outline: none;
+  box-sizing: border-box;
+  text-transform: uppercase;
+}
+
+/*camara geral */
+.camara {
+  min-width: 260px;
+  max-width: 320px;
+  padding: 16px;
+  border-radius: 16px;
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.selects option {
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: lowercase;
+}
+
+.kpiResumo {
+  /*kpi de Resumo */
+  background: linear-gradient(135deg, rgb(6, 33, 26), rgb(0, 111, 83));
+  color: white;
+  border-radius: 18px;
+  padding: 18px;
+  box-shadow: 0 12px 28px rgba(6, 33, 26, 0.18);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+  text-align: center;
+}
+
+.kpiResumo h3 {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.80);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.kpiResumo p {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+/* Fundos */
+.kpi,
+.Glinhas,
+.alertas,
+.camara {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
