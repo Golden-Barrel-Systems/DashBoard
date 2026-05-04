@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DashBoard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <img src="assets/img/logo.png" alt="">
+            <h2>Golden Barrel</h2>
+        </div>
+
+        <div class="menu">
+            <button class="btn" onclick="location.href='dashGeral.html'">Dashboard Geral</button>
+            <button class="btn" onclick="location.href='dashEspecifica.html'">Dashboard Específica</button>
+        </div>
+
+        <button class="btn">Sair</button>
+    </div>
+
+    <main class="dash">
+
+        <div class="selects">
+
+            <div class="camara SelecaoSelects">
+                <h3>Selecionar Câmara</h3>
+                <p>Escolha a câmara que deseja acompanhar no momento.</p>
+                <select id="selectCamaras">
+                    <option value="1">Câmara 1</option>
+                    <option value="2">Câmara 2</option>
+                </select>
+
+            </div>
+
+            <div class="camara SelecaoSelects">
+                <h3>Selecionar Sensor</h3>
+                <p>Escolha o sensor que deseja acompanhar no momento.</p>
+                <select id="selectSensores">
+                    <option value="1">Sensor 1</option>
+                    <option value="2">Sensor 2</option>
+                </select>
+
+            </div>
+
+            <div class="kpiResumo">
+                <h3>Visão atual</h3>
+                <p id="resumoPainel">Câmara 1 · Sensor 1</p>
+            </div>
+        </div>
+
+        <br>
+
+
+        <div class="kpis">
+
+
+            <div class="kpi">
+                <h3>Umidade Atual</h3>
+                <p id="kpiUmidade">-- %</p>
+                <div class="desc">Umidade Ideal é entre 64% e 66%</div>
+            </div>
+
+            <div class="kpi">
+                <h3>Temperatura Atual</h3>
+                <p id="kpiTemperatura">-- °C</p>
+                <div class="desc">Temperatura Ideal é entre 17°C e 19°C</div>
+            </div>
+
+            <div class="kpi">
+                <h3>Posição do Sensor</h3>
+                <p id="kpiPosicaoSensor">--</p>
+                <div class="desc">Local físico do sensor dentro da câmara monitorada</div>
+            </div>
+
+            <div class="kpi">
+                <h3>Sensores na Câmara</h3>
+                <p id="kpiQtdSensores">--</p>
+                <div class="desc">Quantidade total de sensores instalados nesta câmara</div>
+            </div>
+
+            <div class="kpi">
+                <h3>Status do Sensor</h3>
+                <p id="kpiStatusCamara">--</p>
+                <div class="desc">Condição atual do sensor de acordo com temperatura e umidade</div>
+            </div>
+
+
+
+        </div>
+
+
+        <div class="graficosArea">
+
+            <div class="grafics">
+                <div class="Glinhas">
+                    <h2>Medições da Temperatura atual da Câmara</h2>
+                    <p>Acompanhamento contínuo da temperatura da câmara</p>
+
+                    <div class="graficoTam">
+                        <canvas id="graficLineT"></canvas>
+                    </div>
+                </div>
+
+                <div class="Glinhas">
+                    <h2>Medições da Umidade atual da Câmara</h2>
+                    <p>Acompanhamento contínuo da umidade da câmara</p>
+
+                    <div class="graficoTam">
+                        <canvas id="graficLineU"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <div class="alertas">
+                <h2>Alertas Recentes</h2>
+                <div>
+                </div>
+                <p>Ocorrências recentes de desvio da temperatura e umidade ideal na câmara</p>
+                <div id="listaAlertas">
+                </div>
+            </div>
+
+        </div>
+
+
+    </main>
+
+</body>
+
+</html>
