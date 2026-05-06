@@ -263,10 +263,11 @@ h3 {
 }
 
 .Glinhas p {
-  font-size: 10px;
-  font-weight: 400;
+  font-size: 15px;
+  font-weight: 600;
   margin-bottom: 20px;
   text-align: center;
+  color: #666;
 }
 
 .graficoTam {
@@ -304,10 +305,11 @@ h3 {
 }
 
 .alertas p {
-  font-size: 10px;
+  font-size: 15px;
   font-weight: 400;
   margin-bottom: 20px;
   text-align: center;
+   color: #666;
 }
 
 .listaAlertas {
